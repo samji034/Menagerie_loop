@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>menagerie_loop</title>
+<style>
+  :root{
+    --bg:#fff8f0; --card:#ffffff; --ink:#3a281d; --ink-soft:#6b5747;
+    --accent:#e67e4a; --accent-ink:#7a3f1f; --rule:#f0ddc9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#241a14; --card:#2e2119; --ink:#f5e9dd; --ink-soft:#c9b6a4;
+      --accent:#f0a06a; --accent-ink:#ffd8b0; --rule:#4a3627;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#241a14; --card:#2e2119; --ink:#f5e9dd; --ink-soft:#c9b6a4;
+    --accent:#f0a06a; --accent-ink:#ffd8b0; --rule:#4a3627;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Source Sans 3',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding-block:56px 80px}
+  .icon{
+    width:64px;height:64px;border-radius:16px;
+    background:linear-gradient(160deg,#ffd699,#ffad7a);
+    display:flex;align-items:center;justify-content:center;margin-bottom:28px;
+    font-size:30px;
+  }
+  h1{
+    font-family:'Fraunces',Georgia,serif; font-weight:600;
+    font-size:2.1rem; line-height:1.15; margin:0 0 8px; text-wrap:balance;
+    color:var(--accent-ink);
+  }
+  .tagline{color:var(--ink-soft); font-size:1.05rem; margin:0 0 40px}
+  p{line-height:1.65; font-size:1rem; color:var(--ink)}
+  .card{
+    background:var(--card); border:1px solid var(--rule); border-radius:14px;
+    padding:28px 28px 24px; margin-bottom:28px;
+  }
+  .card h2{
+    font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:1.15rem;
+    margin:0 0 10px; color:var(--ink);
+  }
+  .meta{display:flex; gap:10px; flex-wrap:wrap; margin-top:36px}
+  .meta a{
+    color:var(--accent-ink); text-decoration:none; font-size:.92rem;
+    border:1px solid var(--rule); padding:9px 16px; border-radius:999px;
+    background:var(--card);
+  }
+  .meta a:hover{border-color:var(--accent)}
+  footer{margin-top:48px; color:var(--ink-soft); font-size:.85rem}
+  code{background:var(--rule); padding:1px 6px; border-radius:5px; font-size:.9em; color:var(--ink)}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap">
+</head>
+<body>
+<div class="wrap">
+  <div class="icon">🔁</div>
+  <h1>menagerie_loop</h1>
+  <p class="tagline">A personal content-automation tool, built and operated by an individual developer.</p>
+
+  <div class="card">
+    <h2>What this is</h2>
+    <p>
+      <code>menagerie_loop</code> is a small, single-user pipeline that generates short-form
+      pet/animal-themed video clips and publishes them to social accounts that the
+      developer personally owns or has been explicitly granted access to. It is not
+      a public product, is not distributed to other users, and does not offer any
+      service to third parties.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What it connects to</h2>
+    <p>
+      The tool uses TikTok's Content Posting API and the YouTube Data API, under
+      OAuth authorization explicitly granted by the account holder, solely to
+      upload and publish video content to that same account. See the
+      Privacy Policy for the full detail on what is accessed and what isn't.
+    </p>
+  </div>
+
+  <div class="meta">
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <footer>Contact: picanse.be@gmail.com</footer>
+</div>
+</body>
+</html>
+
