@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — menagerie_loop</title>
+<style>
+  :root{
+    --bg:#fff8f0; --card:#ffffff; --ink:#3a281d; --ink-soft:#6b5747;
+    --accent:#e67e4a; --accent-ink:#7a3f1f; --rule:#f0ddc9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#241a14; --card:#2e2119; --ink:#f5e9dd; --ink-soft:#c9b6a4;
+      --accent:#f0a06a; --accent-ink:#ffd8b0; --rule:#4a3627;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#241a14; --card:#2e2119; --ink:#f5e9dd; --ink-soft:#c9b6a4;
+    --accent:#f0a06a; --accent-ink:#ffd8b0; --rule:#4a3627;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Source Sans 3',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding-block:56px 80px}
+  a{color:var(--accent-ink)}
+  .back{display:inline-block; margin-bottom:28px; font-size:.9rem; text-decoration:none; color:var(--ink-soft)}
+  h1{
+    font-family:'Fraunces',Georgia,serif; font-weight:600;
+    font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--accent-ink);
+  }
+  .updated{color:var(--ink-soft); font-size:.9rem; margin:0 0 36px}
+  h2{
+    font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:1.15rem;
+    margin:34px 0 10px; color:var(--ink);
+  }
+  p, li{line-height:1.65; font-size:1rem}
+  ul{padding-left:1.2em}
+  table{width:100%; border-collapse:collapse; margin:18px 0; font-size:.95rem}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--rule); vertical-align:top}
+  th{color:var(--ink-soft); font-weight:600; font-size:.85rem; text-transform:uppercase; letter-spacing:.02em}
+  footer{margin-top:48px; color:var(--ink-soft); font-size:.85rem; border-top:1px solid var(--rule); padding-top:20px}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap">
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; menagerie_loop</a>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated September 2026</p>
+
+  <p>
+    <strong>menagerie_loop</strong> is a personal, single-user automation tool.
+    It is not a public service, does not have its own user accounts, and does
+    not collect data from anyone other than the one TikTok and YouTube account
+    it has been explicitly authorized to publish to.
+  </p>
+
+  <h2>What it accesses</h2>
+  <table>
+    <tr><th>Platform</th><th>Scope</th><th>Used for</th></tr>
+    <tr>
+      <td>TikTok</td>
+      <td><code>video.publish</code></td>
+      <td>Uploading and publishing video content to the authorizing account only.</td>
+    </tr>
+    <tr>
+      <td>YouTube</td>
+      <td><code>youtube.upload</code></td>
+      <td>Uploading video content (as Shorts) to the authorizing channel only.</td>
+    </tr>
+  </table>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not read, collect, or store any other users' data, content, or activity on either platform.</li>
+    <li>It does not use data for advertising, analytics, or profiling of any kind.</li>
+    <li>It does not sell, rent, or share any data with third parties.</li>
+    <li>It does not track visitors to this website — this page sets no cookies and runs no analytics.</li>
+  </ul>
+
+  <h2>Where data is stored</h2>
+  <p>
+    OAuth access and refresh tokens are stored locally on the developer's own
+    machine, in order to keep publishing to the authorized account without
+    requiring a fresh login every run. They are never transmitted anywhere
+    other than directly to TikTok's or Google's own API endpoints.
+  </p>
+
+  <h2>Revoking access</h2>
+  <p>
+    The account holder can revoke the tool's access at any time from TikTok's
+    or Google's own account security settings, which immediately and
+    permanently invalidates the stored tokens.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions, or a request to confirm deletion of stored tokens, can be sent
+    to picanse.be@gmail.com.
+  </p>
+
+  <footer>menagerie_loop — a personal project, not a commercial service.</footer>
+</div>
+</body>
+</html>
+
